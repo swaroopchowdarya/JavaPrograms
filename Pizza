@@ -1,0 +1,36 @@
+package myfirstprograms;
+import java.util.Scanner;
+public class Pizza {
+
+	public static void main(String[] args) {		
+	    Scanner sc = new Scanner(System.in);
+
+	        System.out.println("Enter pizza size:");
+	        System.out.println("1 - Small");
+	        System.out.println("2 - Medium");
+	        System.out.println("3 - Large");
+
+	        int size = sc.nextInt();
+
+	        switch(size) {
+
+	            case 1:
+	                System.out.println("Amount is 200");
+	                break;
+
+	            case 2:
+	                System.out.println("Amount is 300");
+	                break;
+
+	            case 3:
+	                System.out.println("Amount is 500");
+	                break;
+
+	            default:
+	                System.out.println("Invalid pizza size");
+	        }
+
+	        sc.close();
+	    }
+	}
+		
