@@ -1,4 +1,4 @@
-ackage myfirstprograms;
+package myfirstprograms;
 import java.util.Scanner;
 
 public class MultiplesOfThree {
