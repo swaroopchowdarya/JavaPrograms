@@ -1,0 +1,47 @@
+package myfirstprograms;
+
+import java.util.Scanner;
+
+public class NumberRangeChecker {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   Scanner sc = new Scanner(System.in);
+
+	        int[][] arr = new int[3][3];
+	        int count1to50 = 0;
+	        int count50to100 = 0;
+	        int countAbove100 = 0;
+
+	        System.out.println("Enter 9 different numbers for a 3x3 array:");
+
+	        
+	        for (int i = 0; i < 3; i++) {
+	            for (int j = 0; j < 3; j++) {
+	                arr[i][j] = sc.nextInt();
+
+	                int num = arr[i][j];
+
+	              
+	                if (num >= 1 && num <= 50) {
+	                    count1to50++;
+	                    
+	                } else if (num > 50 && num <= 100) {
+	                    count50to100++;
+	                    
+	                } else if (num > 100) {
+	                    countAbove100++;
+	                    
+	                }
+	                
+	            }
+	            
+	        }
+	        System.out.println("\nIn the above array:");
+	        System.out.println("There are " + count1to50 + " numbers between 1 to 50");
+	        System.out.println("There are " + count50to100 + " numbers between 50 to 100");
+	        System.out.println("There are " + countAbove100 + " numbers above 100");
+
+	        sc.close();
+	    }
+	}
