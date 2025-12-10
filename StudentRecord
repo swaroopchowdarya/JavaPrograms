@@ -1,0 +1,47 @@
+package myfirstprograms;
+
+public class StudentRecord {
+	int id;
+	String firstName;
+	String lastName;
+	double fees;
+	
+	public StudentRecord(int id, String firstName, String lastName, double fees) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.fees = fees;
+	}
+	
+	public void getName() {
+		System.out.println("The full name is : " + firstName + " " + lastName);
+	}
+	
+	public void getFees() {
+		System.out.println("The fees is : " + fees);
+	}
+	
+	public static void main(String args[]) {
+		
+		StudentRecord s1 = new StudentRecord(101, "Swaroop", "Chowdary", 45000.50);
+		System.out.println("Student ID is : " + s1.id);
+		
+		s1.getName();
+		s1.getFees();
+		
+		StudentRecord s2 = new StudentRecord(102, "madhavan", "Naidu", 52000.75);
+		System.out.println("Student ID is : " + s2.id);
+		
+		s2.getName();
+		s2.getFees();
+		
+		StudentRecord s3 = new StudentRecord(103, "Anjali", "Sharma", 48000.00);
+		System.out.println("Student ID is : " + s3.id);
+		
+		s3.getName();
+		s3.getFees();
+	}
+	
+}
+
+	
