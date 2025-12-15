@@ -1,0 +1,24 @@
+package myfirstprograms;
+
+public class PolymorphismShapeCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PolymorphismShapeCalculator calc = new PolymorphismShapeCalculator();
+
+	        System.out.println("Circle area = " + calc.findArea(15.0));
+	        System.out.println("Rectangle area = " + calc.findArea(10, 70));
+	        System.out.println("Square area = " + calc.findArea(6));
+	    }
+	    public int findArea(int side) {
+	        return side * side;
+	    }
+	    public int findArea(int length, int breadth) {
+	        return length * breadth;
+	    }
+	    public double findArea(double radius) {
+	        return 3.14 * radius * radius;
+	    }
+	
+
+	}
